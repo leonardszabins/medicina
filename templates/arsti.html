@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+-<!DOCTYPE html>
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
@@ -21,15 +21,24 @@
             <a href="/arsti" class="myButton">Ārsti</a>
            </div>
         </header> 
-        <br> 
-        <input type="text" id="myInput" placeholder="Ārsta vārds uzvārds">
-        <input type="text" id="myInput" placeholder="darba joma">
-        <input type="text" id="myInput" placeholder="darba laiks">
-        <button class="submit" type="submit">add</button>
+        <form id="arstuDarbuIevade"> 
+        
+        <input type="text" id="vards" placeholder="Ārsta vārds uzvārds">
+        <input type="text" id="joma" placeholder="darba joma">
+        <input type="text" id="laiks" placeholder="darba laiks">
+        <button class="submit" type="text" onclick="arstu_ievade()" >add</button>
+        
+        </form>
+
         <ul id="arstuUL">
+            <div class="arstuSaraksts">
+        
+            </div>
             <li>Sņežana Novaha</li>
         </ul>
-    
+
+        <button class="buttonForDeletion" type="button" onclick="arstuuIzdzesana()">Izdzest visas vizites</button>
+
         <script src="static/js/global.js"></script>
     </body>
     </html>

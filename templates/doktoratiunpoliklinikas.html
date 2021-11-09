@@ -21,15 +21,20 @@
             <a href="/arsti" class="myButton">Ārsti</a>
            </div>
         </header> 
-        <br> 
         <input type="text" id="myInput" placeholder="slimnīca">
         <input type="text" id="myInput" placeholder="adrese">
         
-        <button class="submit" type="submit">add</button>
+        <button id="submit" type="submit">add</button>
         <ul id="slimnicasUL">
             <li></li>
         </ul>
-    
+
+        <div id="saraksts">
+          
+        </div>
+
+        <button class="buttonForSubmit" type="button" onclick="slimnicuIzdzesana()">Izdzest visas vizites</button>
+
         <script src="static/js/global.js"></script>
     </body>
     </html>
