@@ -13,27 +13,45 @@
         <div id="kk-big-baner" >
         <a href="/"><img id="kk-btn-close" width="140px" src="static/medlogo.jpg"/>		
         </a>
-    </div>
+        </div>
            <div>
             <a href="/" class="myButton">sākums</a> 
             <a href="/doktoratiunpoliklinikas" class="myButton">Doktorati un Poliklinkas</a>
             <a href="/kontakti" class="myButton">Kontakti</a>
             <a href="/arsti" class="myButton">Ārsti</a>
            </div>
-        </header> 
-        <input type="text" id="myInput" placeholder="slimnīca">
-        <input type="text" id="myInput" placeholder="adrese">
+    </header> 
+          
         
-        <button id="submit" type="submit">add</button>
-        <ul id="slimnicasUL">
-            <li></li>
+          
+
+          
+          <input type="text" id="slimnica" placeholder="slimnīca">
+          <input type="text" id="slimnicaAdrese" placeholder="adrese">
+        
+          <button id="pievienotSlimnicas" type="submit"onclick="slimnicu_ievade()">add</button>
+          
+        
+        <ul id="slimnicuUl">
+          <div id="slimnicuSaraksts">
+          
+          </div>
         </ul>
 
-        <div id="saraksts">
-          
-        </div>
+       
 
-        <button class="buttonForSubmit" type="button" onclick="slimnicuIzdzesana()">Izdzest visas vizites</button>
+        <button class="buttonForDeletion" type="button" onclick="slimnicuIzdzesana()">Izdzest visas vizites</button>
+
+        <div id="container"></div>
+        <br>
+        <div>
+        <button id="arstiDrop">Ārsti</button>
+        </div>
+         
+        
+      
+    
+
 
         <script src="static/js/global.js"></script>
     </body>
