@@ -68,6 +68,23 @@ function slimnicu_ievade()
 function arstuSarakstuIzvade()
 {
   
+  let arstuSarakstsHTML = document.getElementById("arstuSaraksts");
+  arstuSarakstsHTML.innerHTML = "";
+
+  for(let x=0; x < arstuSaraksts.length; ++x)
+  {
+    let sarakstsKuruIzvadis= `
+    <div class="ArstuSarakstsPrieksIzvades">
+      <li>
+      ${arstuSaraksts[x].arstaVards}  ${arstuSaraksts[x].arstaJoma}  
+      ${arstuSaraksts[x].laiks}
+      </li>
+    </div>
+    `;
+    arstuSarakstsHTML.innerHTML += sarakstsKuruIzvadis;
+  }
+  localStorage.setItem("Darbi", JSON.stringify(arstuSaraksts));
+  
 }
 
 function arstuIzdzesana()
@@ -171,7 +188,7 @@ var visiArsti = document.getElementById('arstuSaraksts');
 */
 
 document.getElementById('arstiDrop').onclick = function() {
-  var values = ["Aina Motivāne", "Igors Litvjakovs", "Ingrīda Lasinska"];
+  var values = [Input1, Input2, Input3, Input47, Input5];
   
   var select = document.createElement("select");
   select.name = "dakteri";
